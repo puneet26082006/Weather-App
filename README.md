@@ -55,4 +55,4 @@ An internet connection is required for weather data, flags, and external icon st
 
 - **The page shows an error animation:** inspect the OpenWeather response in your browser's Network panel. Check the city name and whether your API key is active.
 - **The display does not update:** check your connection and the browser console. Network failures currently have no dedicated error message.
-- **A weather icon is missing on an HTTPS host:** the current source uses HTTP icon URLs. Browsers may upgrade or block them; use HTTPS icon URLs when updating the deployment.
+- **A weather icon is missing:** inspect the HTTPS icon request in your browser's Network panel and check your connection. Both the initial icon and search-result icons use HTTPS.
