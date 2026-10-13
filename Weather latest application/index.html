@@ -9,11 +9,13 @@
 </head>
 <body>
     <main>
+        <h1 class="visually-hidden">Weather App</h1>
 
-        <form action="">
-            <input type="text" id="valueSearch">
-            <button>
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <form role="search" aria-label="City weather">
+            <label class="visually-hidden" for="valueSearch">City name</label>
+            <input type="text" id="valueSearch" placeholder="Search a city" autocomplete="off" required>
+            <button type="submit" aria-label="Search weather">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </button>
         </form>
 
